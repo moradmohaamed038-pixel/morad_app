@@ -8,11 +8,11 @@ workflows:
       - name: Get Flutter packages
         script: |
           flutter pub get
-      - name: Build APK release
+      - name: Build APK debug
         script: |
-          flutter build apk --release --no-pub
+          flutter build apk --debug --no-pub
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/flutter-apk/app-debug.apk
     publishing:
       email:
         recipients:
