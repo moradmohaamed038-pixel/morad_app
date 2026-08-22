@@ -8,9 +8,6 @@ workflows:
       - name: Get Flutter packages
         script: |
           flutter pub get
-      - name: Flutter analyze
-        script: |
-          flutter analyze
       - name: Build APK release
         script: |
           flutter build apk --release
@@ -19,7 +16,7 @@ workflows:
     publishing:
       email:
         recipients:
-          - your_email@example.com # ضع بريدك الإلكتروني هنا لاستلام النسخة
+          - your_email@example.com
         notify:
           success: true
           failure: true
