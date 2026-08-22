@@ -6,7 +6,8 @@ import '../models/analytics_model.dart';
 
 /// خدمة الإحصائيات
 class AnalyticsService {
-     final DatabaseReference _database = FirebaseDatabase.instance.ref();
+    final FirebaseDatabase _database = FirebaseDatabase.instance;
+
 
 
 
